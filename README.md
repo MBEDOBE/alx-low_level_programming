@@ -1,3 +1,3 @@
 # alx-low_level_programming
 
-This repo contains project task on C
+This repo contains project tasks on C
