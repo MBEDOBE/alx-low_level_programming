@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
 /**
  * main - Entry point
@@ -16,7 +15,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	d = n % 10;
-	/* your code goes there */
+	
 	if (d == 0)
 	  {
 	    printf("Last digit of %d is %d and is 0\n", n, d);
