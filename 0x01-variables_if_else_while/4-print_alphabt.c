@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	lowerCase a;
+	char v;
 
-	for (a = 'a'; a <= 'z'; a++)
+	for (v = 'a'; v <= 'z'; v++)
 	{
-		if (a != 'q' && a != 'e')
+		if (v != 'q' && v != 'e')
 		{
-			putchar(a);
+			putchar(v);
 		}
 	}
 	putchar('\n');
