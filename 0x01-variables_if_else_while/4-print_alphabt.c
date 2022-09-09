@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - Print all letters except q and e
+ * main - Entry point
  * void - empty
  * Return: Always 0 (Success)
  */
