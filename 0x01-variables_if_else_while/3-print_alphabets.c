@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+<<<<<<< HEAD
 /**
  * main - Entry point
  *
@@ -33,4 +34,18 @@ int main(void)
   
   return (0);
   
+=======
+/* printing the alphabet */
+int main(void)
+{
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+	for (c = 'A'; c <= 'Z'; c++)
+		putchar(c);
+		putchar('\n');
+
+	return (0);
+>>>>>>> d5dead0e93e3ea1fe25fd18bafc1ce847f844677
 }
