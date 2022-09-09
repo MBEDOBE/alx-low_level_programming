@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
- * void - empty
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char v;
+	char a;
 
-	for (v = 'a'; v <= 'z'; v++)
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		if (v != 'q' && v != 'e')
+		if (a != 'q' && a != 'e')
 		{
-			putchar(v);
+			putchar(a);
 		}
 	}
 	putchar('\n');
