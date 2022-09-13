@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - entry point
+ * times_table - printing tables of 9
  *
  * Return: Always 0.
  */
