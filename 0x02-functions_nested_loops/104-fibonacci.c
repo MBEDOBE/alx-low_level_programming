@@ -1,44 +1,47 @@
+#include <limits.h>
+#include <math.h>
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - entry point
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	unsigned long int a = 0, b = 1, c;
-	unsigned long int d, e, f, g;
-	int h = 0;
+	int i;
+	int j;
+	long a_lo = 1;
+	long b_lo = 2;
+	long a_hi = 0;
+	long b_hi = 0;
+	int limit_len = floor(log10(LONG_MAX / 2));
+	long limit = pow(10, limit_len);
 
-	for (h = 0; h <= 91; h++)
+	for (i = 0; i < 98; ++i)
 	{
-		c = a + b;
-		a = b;
-		b = c;
-		printf("%lu, ", c);
-	}
-	d = a % 1000;
-	a = a / 1000;
-	e = b % 1000;
-	b = b / 1000;
-	while (h <= 98)
-	{
-		g = (d + e) / 1000;
-		f = (d + e) - g * 1000;
-		c = (a + b) + g;
-		d = e;
-		e = f;
-		a = b;
-		b = c;
-		if (f >= 100)
-			printf("%lu%lu", c, f);
-		else
-			printf("%lu0%lu", c, f);
-		if (h != 98)
-			printf(" , ");
-		h++;
+		if (a_hi)
+		{
+			printf("%ld", a_hi);
+			for (j = floor(log10(a_lo)) + 1; j < limit_len; ++j)
+				putchar('0');
 		}
-	printf("\n");
+		printf("%ld", a_lo);
+		b_lo = b_lo + a_lo;
+		a_lo = b_lo - a_lo;
+		a_hi = b_hi - a_hi;
+		b_hi = b_hi + a_hi;
+		if (b_lo >= limit)
+		{
+			b_hi += b_lo / limit;
+			b_lo %= limit;
+			a_hi += a_lo / limit;
+			a_lo %= limit;
+		}
+		if (i < 97)
+			printf(", ");
+	}
+	putchar('\n');
+
 	return (0);
 }
