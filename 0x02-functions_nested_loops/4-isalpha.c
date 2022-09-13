@@ -3,7 +3,7 @@
 /**
  * _isalpha - to check for alphabet characters
  * @c : for integer inputs
- * 
+ *
  * Return: Always 0.
  */
 int _isalpha(int c)
