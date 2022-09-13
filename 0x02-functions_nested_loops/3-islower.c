@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _islower - prints 1 if lowecase else prints 0
+ * @c : takes an integer
  * 
  * Return: Always 0.
  */
