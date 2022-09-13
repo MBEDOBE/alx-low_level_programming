@@ -1,7 +1,8 @@
-#include <stdio.h>
+#include <main.h>
+
 /**
- * main - Entry point
- * 
+ * print_to_98 - function to print numbers
+ * @n : integer value
  * Return: Always 0.
  */
 void print_to_98(int n)
