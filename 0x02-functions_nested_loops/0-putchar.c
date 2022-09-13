@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -6,11 +6,6 @@
  */
 int main(void)
 {
-	char a[] = "Holberton";
-		int b;
-
-	for (b = 0; b < 9; b++)
-		_putchar(a[b]);
-	_putchar('\n');
+	write("_putchar");
 	return (0);
 }
