@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _isalpha - to check for alphabet characters
+ * @c : for integer inputs
  * 
  * Return: Always 0.
  */
