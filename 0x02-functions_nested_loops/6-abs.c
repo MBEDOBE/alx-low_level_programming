@@ -1,7 +1,7 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * main- Entry point.
+ * main- check the code.
  * 
  * Return: Always 0.
  */
