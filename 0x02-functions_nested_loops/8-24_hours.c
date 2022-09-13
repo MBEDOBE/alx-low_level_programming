@@ -1,8 +1,8 @@
 #include "holberton.h"
 
-/**
- * main - Entry point.
- * 
+**
+ * jack_bauer - minute, hours and everything
+ * void : is empty
  * Return: Always 0.
  */
 void jack_bauer(void)
