@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code.
- * 
+ * print_sign - prototype to print sign of number
+ * @n : integer value
  * Return: Always 0.
  */
 int print_sign(int n)
