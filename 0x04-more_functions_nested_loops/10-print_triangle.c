@@ -1,15 +1,23 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_triangle - prints a triangle of size size
+ *@size: size of triangle
+ * Return: void
  */
-int main(void)
+void print_triangle(int size)
 {
-    print_triangle(2);
-    print_triangle(10);
-    print_triangle(1);
-    print_triangle(0);
-    return (0);
+int x;
+int y;
+for (x = 1; x <= size; x++)
+{
+for (y = 1; y <= size; y++)
+{
+if (y <= (size - x))
+_putchar(' ');
+else
+_putchar('#');
+}
+_putchar('\n');
+}
 }
