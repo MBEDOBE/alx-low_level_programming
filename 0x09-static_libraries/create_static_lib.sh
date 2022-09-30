@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 gcc -c *.c
-ar -rc liball.a -o *.o
+ar -cr liball.a *.o
