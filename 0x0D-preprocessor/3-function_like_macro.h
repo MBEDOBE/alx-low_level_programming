@@ -1,4 +1,4 @@
-#ifndef abs_h
-#define abs_h
-#define ABS(x) (x > 0 ? x : x * -1)
+#ifndef DOUBLEGUARD
+#define DOUBLEGUARD
+#define ABS(x) ((x) < 0 ? ((x) * (-1)) : (x))
 #endif
