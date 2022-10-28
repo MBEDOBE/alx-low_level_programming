@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * binary_to_uint - function to convert binary to unsigned integer
